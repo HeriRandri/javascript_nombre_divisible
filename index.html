@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--  <input type="text" id="isa" placeholder="isa">
+    <button type="button" id="valider">valider</button>
+    <p id="txt"></p>
+
+    <div class="container">
+        <div class="matroka">
+            <label for="nombre">Ampidiro ny laharana </label>
+            <input type="number" id="nombre" value="0">
+        </div>
+        <div class="mazava">
+            <label for="nombre">fanombohany </label>
+            <input type="number" id="depart">
+        </div>
+        <div class="matroka">
+            <label for="nombre">hiafarany </label>
+            <input type="number" id="arriver" value="100">
+        </div>
+        <div class="alefa">
+            <button type="button" id="button">alefa aaa</button>
+        </div>
+        <p id="txt"></p>
+    </div>
+    
+   <h2>Entrez un nombre pour générer sa table de multiplication :</h2>
+    <input type="number" id="nombre" placeholder="Entrez un nombre">
+    <input type="number" id="debut" placeholder="Entrez le début de la plage">
+    <input type="number" id="fin" placeholder="Entrez la fin de la plage">
+    <button onclick="genererTable()">Générer la table de multiplication</button>
+    <table id="tableau"></table>
+
+    <script>
+        function genererTable() {
+            // Récupérer les valeurs entrées par l'utilisateur
+            const nombre = parseInt(document.getElementById("nombre").value);
+            const debut = parseInt(document.getElementById("debut").value);
+            const fin = parseInt(document.getElementById("fin").value);
+
+            // Sélectionner l'élément de tableau
+            const tableau = document.getElementById("tableau");
+            tableau.innerHTML = ""; // Effacer le contenu précédent du tableau
+
+            // Générer la table de multiplication
+            for (let i = debut; i <= fin; i++) {
+                const ligne = document.createElement("tr");
+                const cellule1 = document.createElement("td");
+                const cellule2 = document.createElement("td");
+
+                cellule1.innerHTML = i;
+                cellule2.textContent = i * nombre;
+
+                ligne.appendChild(cellule1);
+                ligne.appendChild(cellule2);
+
+                tableau.appendChild(ligne);
+            }
+        }
+    <body> 
+
+        -->
+        <div class="container">
+            <h1 style="text-align: center;">Entrez les nombres</h1>
+            <div class="matroka">
+                <label for="nombre">Nombre de diviseur </label>
+                <input type="number" id="nombre" placeholder="Nombre de diviseur">
+            </div>
+            <div class="mazava">
+                <label for="nombre">Commencemet de nombre divisible </label>
+                <input type="number" id="depart" placeholder="Commencemet de nombre divisible">
+            </div>
+            <div class="matroka">
+                <label for="nombre">Dernier nombre divisible </label>
+                <input type="number" id="arriver" placeholder="Dernier nombre divisible">
+            </div>
+            <div class="alefa">
+                <button type="button" id="button">alefa aaa</button>
+            </div>
+            <p id="txt"></p>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
